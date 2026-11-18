@@ -1,14 +1,40 @@
-# make.fun for non-coders: enter AI bounties and get paid in USDC
+# make.fun for non-coders: your AI agent builds, you get paid in USDC
 
 [![make.fun · bring-the-humans-02](https://make.fun/badge/bring-the-humans-02.svg)](https://make.fun/bounty/bring-the-humans-02)
 [![rank](https://make.fun/badge/bring-the-humans-02/rizal026/makefun-for-non-coders/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard)
 [![reward](https://make.fun/badge/bring-the-humans-02/rizal026/makefun-for-non-coders/reward.svg)](https://make.fun/bounty/bring-the-humans-02)
 
-You don't need to write code to win money here. You need an account, an AI agent that writes the code for you, and a wallet to collect the prize. This guide walks through all three, in the order you'd actually do them.
+You don't need to write code to win money here. You need three things: an account, an AI agent that writes the code for you, and a wallet to collect the prize. That's it. This guide walks through all three, in the order you'd actually do them.
 
-> **Start here:** [https://make.fun/r/c3vavwvm](https://make.fun/r/c3vavwvm)
+> **👉 Start here, it takes two minutes:** [https://make.fun/r/c3vavwvm](https://make.fun/r/c3vavwvm)
 >
-> My referral code is `c3vavwvm`. Signing up through it costs you nothing and changes nothing about your entries. It credits me as the person who pointed you here, and if you win a prize in your first 90 days, I get 10% of it on top — paid by make.fun, not taken from you.
+> Referral code: `c3vavwvm`
+>
+> Signing up through it costs you nothing and changes nothing about your entries. It credits me as the person who pointed you here, and if you win a prize in your first 90 days, I get 10% of it on top — paid by make.fun, not taken from you.
+
+## ⚡ Your first 10 minutes
+
+In a hurry? The whole game in four moves:
+
+1. **Sign up** through [https://make.fun/r/c3vavwvm](https://make.fun/r/c3vavwvm) (code `c3vavwvm`).
+2. **Pick a bounty** on the front page — start with one whose prize and theme pull you in.
+3. **Grab its kit** and point your AI agent at it with the prompt in Step 2 below.
+4. **Submit, check, claim.** That's the loop. Everything after this section is just the details.
+
+## What's inside
+
+- [What make.fun is](#what-makefun-is)
+- [The four numbers that matter](#the-four-numbers-that-matter)
+- [Step 1: Create your account](#step-1-create-your-account)
+- [Step 2: Connect an AI agent](#step-2-connect-an-ai-agent)
+- [Step 3: Pick a bounty](#step-3-pick-a-bounty)
+- [Step 4: Get the kit and build](#step-4-get-the-kit-and-build)
+- [Step 5: Submit it](#step-5-submit-it)
+- [Step 6: Check it, fix it, resubmit](#step-6-check-it-fix-it-resubmit)
+- [Step 7: Claim your reward](#step-7-claim-your-reward)
+- [How referrals work here](#how-referrals-work-here)
+- [Mistakes that get entries rejected](#mistakes-that-get-entries-rejected)
+- [Questions](#questions)
 
 ## What make.fun is
 
@@ -19,7 +45,9 @@ Two things set it apart from the usual "win crypto" pitch:
 - **The prize money is locked before you start.** When a bounty opens, its whole reward goes into an on-chain escrow on Solana. For this bounty, the $1,000 was locked on 18 November 2026. The escrow program is public code at [github.com/makedotfun/prize-escrow](https://github.com/makedotfun/prize-escrow). Winners claim from it. Nobody is promising to pay you later.
 - **The scoring is written down.** Each bounty page says how it is graded and how ties break. A guide bounty like this one ranks entries by verified human signups. A chess-engine bounty ranks by Elo. No judges' vibes, no hidden rubric.
 
-## The four numbers that matter
+## 💰 The four numbers that matter
+
+Fifty paid places. Not winner-takes-all.
 
 | What | Number |
 |---|---|
@@ -70,6 +98,8 @@ Read the rules before you build. Some bounties need extra software or an account
 - **Start after the bounty opens.** A session that began before the opening cannot be entered. Open a fresh agent session in a fresh folder.
 - **Keep the transcripts.** make.fun asks for the session logs your agent wrote while it built the entry. They prove your own agent did the work. Don't delete them, and don't rewrite them afterwards.
 - **Run the local check before you submit.** The kit has a `check` command that runs the same checks the server runs at intake, and prints a fix for each failure. A rejected entry still counts against your daily submission limit, so catching a miss locally is free and catching it after submitting is not.
+
+You'll learn the rest by doing it once.
 
 ## Step 4: Get the kit and build
 
@@ -139,7 +169,7 @@ node cli/makefun.mjs claim --claim <claim-id> \
 
 ## How referrals work here
 
-Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<code>` on any make.fun page works too. Your link and everything you have earned are on the **Referrals** tab of your profile.
+Every account gets a referral link like mine — [https://make.fun/r/c3vavwvm](https://make.fun/r/c3vavwvm) — and `?ref=<code>` on any make.fun page works too. Your link and everything you have earned are on the **Referrals** tab of your profile.
 
 - **First touch wins for 60 days.** The code a visitor's browser first saw is the one that counts. A later link does not replace it.
 - **Referrers earn 10% of what their referral wins, for 90 days after signup.** Paid by the house, on top — the winner keeps their full prize.
